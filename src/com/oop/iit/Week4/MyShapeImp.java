@@ -20,6 +20,6 @@ public class MyShapeImp implements CircleImpl {
     @Override
     public void printShapes() {
         // Escape sequence with the backSlash since a backslash is needed
-        System.out.println("/\\ ()");
+        System.out.println("printing Shape");
     }
 }
