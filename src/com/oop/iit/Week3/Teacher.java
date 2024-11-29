@@ -3,6 +3,7 @@ package com.oop.iit.Week3;
 public class Teacher extends Person {
     private double salary;
     // Using the final keyword - week4
+    // Constant variable uses all caps
     public static final String CLASS_NAME = "Teacher";
 
 
@@ -36,7 +37,7 @@ public class Teacher extends Person {
     public void talk() {
         System.out.println(getName() + "who is a teacher is talking");
     }
-// Override is an annotation -its not mandatory but as a practice use it (for overriding the method signature should be the same.)
+// Override is an annotation -it's not mandatory but as a practice use it (for overriding the method signature should be the same.)
     @Override
     public void walk() {
         System.out.println(getName() + "who is a teacher is walking");

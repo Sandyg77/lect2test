@@ -1,4 +1,4 @@
-package Week5.Arrays;
+package com.oop.iit.Week5.Arrays;
 
 import java.util.ArrayList;
 

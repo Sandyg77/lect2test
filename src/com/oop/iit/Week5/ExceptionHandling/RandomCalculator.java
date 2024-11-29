@@ -1,4 +1,4 @@
-package Week5.ExceptionHandling;
+package com.oop.iit.Week5.ExceptionHandling;
 
 import java.util.Scanner;
 
@@ -22,5 +22,20 @@ public class RandomCalculator {
         } catch (Exception exception) {
             System.out.println("An unknown error occurred");
         }
+
+        try {
+            calculateNumbers(a,b);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // When we throw an exception should mention in the method signature
+    public static void calculateNumbers(int a, int b) throws Exception {
+        if (a == b){
+            //Can have custom exceptions as well
+            throw new EqualNumberException("A and B should not be equal");
+        }
+        System.out.println("A + B = " + (a+b));
     }
 }
